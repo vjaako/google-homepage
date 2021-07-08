@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+    </head>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+        }
+        a {                           
+            color: inherit;
+            text-decoration: none;                      /* removes underline */
+        }
+        .nav {
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+        }
+        .nav-link {
+            margin-right: 1.5rem;
+        }
+        .button-apps {
+            width: 30px;
+            height: 30px;
+            margin-right: 1.5rem;
+        }
+        .button-avatar {
+            width: 34px;
+            height: 34px;
+            margin-right: 3rem;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            background-color: cornflowerblue;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 15rem;
+        }
+        .searchbar {            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 580px;
+            padding: 0.2rem;
+            padding-right: 1.5rem;            
+        }
+        .search-input {
+            width: 99%;         /* default width is 50%? */
+            font-size: 1.6rem;
+            border: 0.5px solid rgba(32, 33, 36, 0.28);
+            border-radius: 30px;
+        }
+        .search-buttons-container {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2.4rem;
+        }
+        .search-buttons {
+            min-width: 54px;
+            height: 36px;
+            padding: 0 2rem;                    /* height zero, width 2rem */
+            margin: 0.7rem;
+            font-size: 1.4rem; 
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            border: 1px solid #ddd;
+            background: #f2f2f2;
+        }
+        .footer-left {
+            display:flex;
+        }
+        .footer-right {
+            display:flex;
+        }
+        .footer-link {
+            margin: 0.7rem 1rem 0.7rem 1rem;           /* top, right, bottom, left */
+        }
+
+    </style>
+    <body>
+        <!-- Top navigation bar -->
+        <nav class="nav">
+            <a class="nav-link" href="#">Gmail</a>
+            <a class="nav-link" href="#">Images</a>
+            <img class="button-apps" src="Images/outline_apps_black_24dp.png" alt="" />
+            <img class="button-avatar" src="Images/Avatar_Aang.png" alt="" />
+        </nav>
+        
+        <main class="main">
+            <!-- Google logo -->
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" />
+            
+            <!-- Searchbar -->
+            <div class="searchbar">
+                <input class="search-input" type="text" />
+            </div>
+
+            <!-- Search buttons -->
+            <div class="search-buttons-container">
+                <button class="search-buttons">Google search</button>
+                <button class="search-buttons">I'm Feeling Lucky</button>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-left">
+                    <a class="footer-link" href="#">Advertising</a>
+                    <a class="footer-link" href="#">Business</a>
+                    <a class="footer-link" href="#">About</a>
+                    <a class="footer-link" href="#">How Search works</a>
+                </div>
+                <div class="footer-right">
+                    <a class="footer-link" href="#">Privacy</a>
+                    <a class="footer-link" href="#">Terms</a>
+                    <a class="footer-link" href="#">Settings</a>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
