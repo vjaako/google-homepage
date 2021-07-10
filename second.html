@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        a:hover {
+            text-decoration: underline;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;            
+        }
+        body {
+            font-family: arial, sans-serif;
+        }
+        .nav {
+            display:flex;
+            justify-content: flex-end;
+            font-size: 0.8rem;
+        }
+        .nav-link {
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+        .apps {
+            width: 25px;
+            height: 25px;
+            margin-right: 1rem;
+            margin-top: 0.7rem;
+            margin-left: 0.5rem;
+            opacity: 0.65;
+        }
+        .avatar {
+            width: 32px;
+            height: 32px;
+            margin-right: 1rem;
+            margin-left: 0.5rem;
+            margin-top: 0.4rem;
+            background-color: skyblue;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(248, 244, 244, 0.493);
+            border: 0.1px solid rgb(231, 231, 231);
+        }
+        .footer-left {
+            display: flex;
+            
+        }
+        .footer-right {
+            display: flex;
+            justify-content:flex-end
+        }
+        .footer-link {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.1rem;
+            font-size: 0.9rem;
+            color: rgb(122, 122, 122);
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;          
+            margin-top: 13rem;
+        }
+        .google-logo {
+            width: 272px;
+        }
+        .searchbar {
+            display:flex;
+            align-content: center;
+            margin-top: 2rem;
+            border: 1px solid rgba(10, 10, 10, 0.2);
+            border-radius: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 5px;          
+        }
+        .search-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 1rem;
+            margin-top: 5px;
+            opacity: 50%;
+        }
+        .inputbar {
+            font-size: 1rem;
+            width: 550px;
+            border: 1px solid rgba(0, 0, 0, 0);
+        }
+        .clear-icon {
+            width: 26px;
+            height: 26px;
+            opacity: 70%;
+            padding-right: 0.8rem;
+        }
+        .searchbutton-container {
+            display: flex;
+            margin-top: 2rem;
+        }
+        .button-left {
+            height: 40px;
+            width: 140px;
+            font-size: 0.9rem;
+            background-color:rgba(202, 188, 188, 0.1);
+            border:rgba(10, 10, 10, 0);
+            border-radius: 5px;
+            margin-right: 7px;
+            opacity: 80%;
+        }
+        .button-right {
+            height: 40px;
+            width: 140px;
+            font-size: 0.9rem;
+            background-color:rgba(202, 188, 188, 0.1);
+            border:rgba(10, 10, 10, 0);
+            border-radius: 5px;
+            margin-left: 7px;
+            opacity: 80%;
+        }
+
+    </style>
+    <body>
+        <nav class="nav">
+            <a class="nav-link" href="index.html">First</a>
+            <a class="nav-link" href="#">Gmail</a>
+            <a class="nav-link" href="#">Images</a>
+            <img class="apps" src="Images/outline_apps_black_24dp.png">
+            <img class="avatar" src="Images/Avatar_Aang.png">
+        </nav>
+
+        <main class="main">
+            <img class="google-logo" src="Images/googlelogo_color_272x92dp.png" alt=""/>
+            
+            <div class="searchbar">
+                <img class="search-icon" src="Images/outline_search_black_24dp.png" alt="" />
+                <input class="inputbar" type="text">
+                <img class="clear-icon" src="Images/outline_clear_black_24dp.png" alt="" />
+            </div>
+            
+            <div class="searchbutton-container">
+                <button class="button-left">Google Search</button>
+                <button class="button-right">I'm Feeling Lucky</button>
+            </div>
+                        
+            <footer class="footer">
+                <div class="footer-left">
+                    <a class="footer-link">About</a>
+                    <a class="footer-link">Advertising</a>
+                    <a class="footer-link">Business</a>
+                    <a class="footer-link">How Search works</a>
+                </div>                
+                <div class="footer-right">
+                    <a class="footer-link">Privacy</a>
+                    <a class="footer-link">Terms</a>
+                    <a class="footer-link">Settings</a>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
